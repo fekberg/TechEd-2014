@@ -1,0 +1,1 @@
+In order to run SQLite on your Windows Store App you will need to install the extensions for Visual Studio found here: https://visualstudiogallery.msdn.microsoft.com/1d04f82f-2fe9-4727-a2f9-a2db127ddc9a
