@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="TodoTechEd2014.Client.EditItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TodoTechEd2014.Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+      <TextBlock x:Name="pageTitle" Text="Modify Todo Item" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1"
+                  IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom"  Margin="20" />
+        <TextBox Text="{Binding Text, Mode=TwoWay}"  Margin="20,0,20,0" />
+
+      <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Content="Completed?" Margin="20,10,0,0" VerticalAlignment="Center"/>
+        <Button Click="Save_Click" Margin="20,10,0,0">Save</Button >
+    </StackPanel>
+</Page>
